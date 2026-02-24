@@ -1,0 +1,19 @@
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+
+ACCEPT  num NUMBER PROMPT 'ENTER A NUMBER...';
+
+DECLARE
+n NUMBER :=&num;
+
+BEGIN
+  FOR i IN 1..n LOOP
+  IF (i MOD 2 = 0) THEN
+  DBMS_OUTPUT.PUT_LINE('EVEN number is '||i);
+  
+  ELSE
+  DBMS_OUTPUT.PUT_LINE('odd number is '||i);
+  END IF;
+  END LOOP;
+END;
+/
