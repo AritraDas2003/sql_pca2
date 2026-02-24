@@ -24,8 +24,8 @@ DECLARE
     v_lowest        NUMBER;
 BEGIN
 
-    -- Find 3rd lowest DISTINCT salary
--- Find 3rd lowest salary safely
+-- Find 3rd lowest DISTINCT salary
+
 SELECT MIN(salary)
 INTO v_third_lowest
 FROM employee
